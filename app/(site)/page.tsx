@@ -8,6 +8,7 @@ import Timestamp from "@/app/components/item/Timestamp";
 import UUID from "@/app/components/item/UUID";
 import JsonFormat from "@/app/components/item/JsonFormat";
 import {elementList} from "@/script/data";
+import RandomNum from "@/app/components/item/RandomNum";
 
 export default function Page() {
     return (
@@ -38,8 +39,11 @@ export default function Page() {
                         <div className="mb-5">
                             <Timestamp id={elementList[6].id} title={elementList[6].name} />
                         </div>
-                        <div>
+                        <div className="mb-5">
                             <UUID id={elementList[7].id} title={elementList[7].name} />
+                        </div>
+                        <div>
+                            <RandomNum id={elementList[8].id} title={elementList[8].name} />
                         </div>
                     </div>
                 </div>

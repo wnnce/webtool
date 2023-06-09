@@ -30,5 +30,9 @@ export const elementList = [
     {
         id: 'uuid',
         name: '随机UUID'
+    },
+    {
+        id: 'num',
+        name: '随机数生成'
     }
 ]

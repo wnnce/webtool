@@ -73,5 +73,12 @@ export function highlightJSON(json: string) {
     });
     return '<code>' + json + '</code>';
 }
+
+export function checkIsNumber(value: string){
+    return !isNaN(Number(value))
+}
+export function generateRandom(min: number, max: number){
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 export const encodes =  [urlEncodeOrDecode, base64EncodeOrDecode]
 export const encrypts = [md5, sha256, sha512]
