@@ -1,6 +1,4 @@
-'use client'
-
-import React, {ChangeEvent, ReactNode, useState} from "react";
+import React, {ChangeEvent, ReactNode} from "react";
 
 interface CardProps {
     id: string;
