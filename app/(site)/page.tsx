@@ -9,6 +9,7 @@ import UUID from "@/app/components/item/UUID";
 import JsonFormat from "@/app/components/item/JsonFormat";
 import {elementList} from "@/script/data";
 import RandomNum from "@/app/components/item/RandomNum";
+import Footer from "@/app/components/Footer";
 
 export default function Page() {
     return (
@@ -16,7 +17,7 @@ export default function Page() {
             <Header />
             <div className="min-h-full flex">
                 <Sidebar />
-                <div className="w-full py-5 mt-12">
+                <div className="w-full pt-5 mt-12">
                     <div className="md:w-3/4 xl:2/3 w-11/12 mx-auto">
                         <div className="mb-5">
                             <JsonFormat id={elementList[0].id} title={elementList[0].name} />
@@ -42,9 +43,12 @@ export default function Page() {
                         <div className="mb-5">
                             <UUID id={elementList[7].id} title={elementList[7].name} />
                         </div>
-                        <div>
+                        <div className="mb-5">
                             <RandomNum id={elementList[8].id} title={elementList[8].name} />
                         </div>
+                    </div>
+                    <div className="bg-white py-4">
+                        <Footer />
                     </div>
                 </div>
             </div>
