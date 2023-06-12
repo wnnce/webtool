@@ -12,13 +12,13 @@ export default function Footer() {
             </p>
             <div className="flex mt-2 justify-center">
                 <span className="px-2">
-                    <img src="https://img.shields.io/static/v1?style=appveyor&logo=github&label=Github&message=webtool&color=green" alt="Github" />
+                    <img src="https://img.shields.io/static/v1?style=appveyor&logo=github&label=Github&message=webtool&color=green" width="100rem" height="30rem" alt="Github" />
                 </span>
                 <span className="px-2">
-                    <img src="https://img.shields.io/static/v1?style=appveyor&logo=next.js&label=Next.js&message=13.4.4&color=block" alt="Next.js"/>
+                    <img src="https://img.shields.io/static/v1?style=appveyor&logo=next.js&label=Next.js&message=13.4.4&color=block" width="100rem" height="30rem" alt="Next.js"/>
                 </span>
                 <span className="px-2">
-                    <img src="https://img.shields.io/static/v1?style=appveyor&logo=vercel&label=Vercel&message=wnnce&color=blue" alt="Vercel"/>
+                    <img src="https://img.shields.io/static/v1?style=appveyor&logo=vercel&label=Vercel&message=wnnce&color=blue" width="100rem" height="30rem" alt="Vercel"/>
                 </span>
             </div>
         </div>

@@ -14,7 +14,6 @@ const Card: React.FC<CardProps> = ({ id, title, options, onSelectChange , childr
     const handlerSelectChange = (event: ChangeEvent<HTMLSelectElement>) => {
         onSelectChange(event.target.value)
     }
-
     return (
         <div id={id} className="bg-white rounded-xl p-4 xl:p-6">
             <div className="border-l-4 border-l-cyan-400 px-3 flex justify-between">
