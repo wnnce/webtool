@@ -9,8 +9,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="zh-cn">
-      <body>{children}</body>
-    </html>
-  )
+      <html lang="zh-cn">
+          <head>
+            <meta name="baidu-site-verification" content="codeva-kEnfIut94G" />
+            <title>{metadata.title}</title>
+          </head>
+          <body>{children}</body>
+      </html>
+    )
 }
