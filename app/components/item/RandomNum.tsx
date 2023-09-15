@@ -54,8 +54,8 @@ const RandomNum: React.FC<RandomNumProps> = ({id, title}) => {
     return(
         <Card id={id} title={title}>
             <div className="flex justify-between">
-                <input value={minNum} onChange={handleMinInputChange} className="bg-gray-50 p-2 pr-8 w-2/5 text-gray-700 focus:outline-none" placeholder="最小数" />
-                <input value={maxNum} onChange={handleMaxInputChange} className="bg-gray-50 p-2 pr-8 w-2/5 text-gray-700 focus:outline-none" placeholder="最大数" />
+                <input value={minNum} onChange={handleMinInputChange} className="bg-gray-50 p-2 pr-8 w-2/5 text-gray-700 border border-gray-50 transition rounded focus:outline-none focus:border-blue-300" placeholder="最小数" />
+                <input value={maxNum} onChange={handleMaxInputChange} className="bg-gray-50 p-2 pr-8 w-2/5 text-gray-700 border border-gray-50 transition rounded focus:outline-none focus:border-blue-300" placeholder="最大数" />
             </div>
             <div className="mt-4 flex justify-center">
                 <div className="px-2">

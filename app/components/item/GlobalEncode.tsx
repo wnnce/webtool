@@ -62,7 +62,7 @@ const GlobalEncode: React.FC<GlobalEncodeProps> = ({id, title, options, encodeTy
                         <textarea
                             className="
                             border-2 border-gray-50 bg-gray-50 rounded-md w-full text-gray-700 h-40 p-2 pr-4
-                            focus:outline-none break-words scrollbar-none resize-none"
+                            focus:outline-none break-words scrollbar-none resize-none" disabled
                             value={codeContent}
                         />
                     </div>

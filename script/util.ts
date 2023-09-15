@@ -1,4 +1,4 @@
-const CryptoJS = require('crypto-js');
+import CryptoJS from 'crypto-js';
 
 function md5(value: string){
     return CryptoJS.MD5(value).toString();

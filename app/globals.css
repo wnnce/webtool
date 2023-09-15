@@ -11,30 +11,38 @@ html{
   scroll-padding-top: 68px;
 }
 
-@keyframes fade {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
 }
 
-@keyframes slideIn {
-  0% {
-    transform: translateX(-100%);
+.slider {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 300px;
+  left: -300px;
+  z-index: 10000;
+  background-color: white;
+  transition: left 0.3s ease;
+}
+
+@media (max-width: 576px) {
+  .slider {
+    width: 240px;
+    left: -240px;
   }
-  100% {
-    transform: translateX(0);
-  }
 }
 
-.sidebar-show{
-  display: block;
-  width: 40%;
-  box-shadow: 10px 0 10px rgba(224, 222, 222, 0.5);
-  animation: slideIn 0.5s forwards;
-  transform: translateX(-100%);
-}
 
-.fade-show {
-  animation: fade 600ms ease-in-out;
+
+.active {
+  left: 0;
 }
 
 .json-highlight {
